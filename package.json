@@ -1,0 +1,32 @@
+{
+  "name": "babel-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand",
+    "lint": "eslint ./server",
+    "dev": "nodemon --exec babel-node ./server"
+  },
+  "keywords": [],
+  "author": "Michael Upton (uptonm)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "eslint": "^5.15.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.17",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "dotenv": "^6.2.0",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.10",
+    "superagent": "^4.1.0",
+    "supertest": "^3.4.2"
+  }
+}

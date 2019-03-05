@@ -1,7 +1,8 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
-const health = new mongoose.Schema({
+const healthSchema = new mongoose.Schema({
   isHealthy: Boolean
 });
 
-export default mongoose.model('health', health);
+const health = mongoose.model('health', healthSchema);
+module.exports = health;

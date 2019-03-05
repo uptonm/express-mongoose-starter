@@ -1,7 +1,5 @@
-import express from 'express';
-const router = express.Router();
-import { getHealth } from '../controllers/controller';
+const controller = require('../controllers/controller');
 
-router.get('/health', getHealth);
-
-export default router;
+module.exports = router => {
+  router.get('/health', controller.getHealth);
+};

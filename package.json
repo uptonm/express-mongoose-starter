@@ -1,12 +1,13 @@
 {
-  "name": "babel-starter",
+  "name": "express-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --runInBand",
-    "lint": "eslint ./server",
-    "dev": "nodemon --exec babel-node ./server"
+    "start": "nodemon ./server",
+    "test": "mocha --timeout 10000 --exit",
+    "serve": "node ./server",
+    "lint": "eslint ./server"
   },
   "keywords": [],
   "author": "Michael Upton (uptonm)",
@@ -21,12 +22,10 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
     "dotenv": "^6.2.0",
-    "jest": "^24.1.0",
-    "nodemon": "^1.18.10",
-    "superagent": "^4.1.0",
-    "supertest": "^3.4.2"
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10"
   }
 }
